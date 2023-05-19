@@ -1,104 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Prata&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Encriptador de Textos</title>
-		<link
-			rel="shortcut icon"
-			href="imagenes/descifrado.png"
-			type="image/x-icon"
-		/>
-		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	</head>
 
-	<body>
-		<header>
-			<img
-				src="./Imagenes/Logo.png"
-				alt="Logo de Alura"
-				class="logo"
-			/>
-		</header>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Prata&display=swap"
+		rel="stylesheet" />
+	<title>Encriptador de Textos</title>
+	<link rel="shortcut icon" href="imagenes/descifrado.png" type="image/x-icon" />
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
 
-		<main>
-			<div class="container">
-				<div class="encriptar">
-					<textarea
-						name="texto"
-						id="texto"
-						cols="30"
-						rows="10"
-						class="texto"
-						placeholder="ingresa el texto aquí"
-					></textarea>
+<body>
+	<header>
+		<img src="./Imagenes/Logo.png" alt="Logo de Alura" class="logo" />
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="encriptar">
+				<textarea name="texto" id="texto" cols="30" rows="10" class="texto"
+					placeholder="ingresa el texto aquí"></textarea>
+			</div>
+
+			<div class="terminos">
+				<div class="alerta">
+					<img src="imagenes/alerta.svg" alt="alerta" />
 				</div>
+				<p>Sólo letras minúsculas y sin acentos.</p>
+			</div>
 
-				<div class="terminos">
-					<div class="alerta">
-						<img src="imagenes/alerta.svg" alt="alerta" />
-					</div>
-					<p>Sólo letras minúsculas y sin acentos.</p>
-				</div>
-
-				<div class="botones">
-					<!-- <button 
+			<div class="botones">
+				<!-- <button 
 						class="btn-encriptar" 
 						type="button" 
 						onclick="encriptar()">
 					Encriptar
 				</button> -->
-					<input
-						type="button"
-						class="btn-encriptar"
-						value="Encriptar"
-						onclick="encriptar()"
-					/>
+				<input type="button" class="btn-encriptar" value="Encriptar" onclick="encriptar()" />
 
-					<input
-						type="button"
-						class="btn-desencriptar"
-						value="Desencriptar"
-						onclick="desencriptar()"
-					/>
-				</div>
+				<input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()" />
 			</div>
+		</div>
 
-			<div class="encriptado">
-				<img src="imagenes/muñeco.png" alt="" id="munieco" />
+		<div class="encriptado">
+			<img src="imagenes/muñeco.png" alt="" id="munieco" />
 
-				<div class="mensaje-encriptado" id="mensaje-encriptado">
-					<h2 id="titulo-mensaje">No se encontró algún mensaje</h2>
-					<p id="parrafo">
-						Ingresa el texto que deseas <br />
-						encriptar o desencriptar
-					</p>
-					<!-- <textarea
+			<div class="mensaje-encriptado" id="mensaje-encriptado">
+				<h2 id="titulo-mensaje">No se encontró algún mensaje</h2>
+				<p id="parrafo">
+					Ingresa el texto que deseas <br />
+					encriptar o desencriptar
+				</p>
+				<!-- <textarea
 						name="mensaje"
 						id="mensaje"
 						cols="30"
 						rows="10"
 						class="mensaje"
 						></textarea> -->
-				</div>
 			</div>
-		</main>
-	</body>
+		</div>
+	</main>
+</body>
 
-	<script src="./index.js"></script>
+<script src="./index.js"></script>
+
 </html>
